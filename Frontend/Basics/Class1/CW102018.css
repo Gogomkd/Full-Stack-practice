@@ -1,0 +1,106 @@
+.container {
+    width:800px;
+    height:600px;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    
+}
+html {
+    font-family: Verdana;
+}
+.content {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+   
+}
+.levo {
+    display: grid;
+    grid-column: 1/4;
+    grid-row:1/9;
+    display: flex;
+    flex-direction: column;
+
+}
+.kopce input {
+    border-radius: 15px;
+    border: 2px solid grey;
+    padding: 20px; 
+    width: 210px;
+    height: 15px; 
+    margin-left: 20px;
+    color: grey;
+    font-size: 18px;
+}
+.desno {
+    display: grid;
+    grid-column: 5/9;
+    grid-row:1/9;
+    display: flex;
+    flex-direction: column;
+}
+img {
+        width: 60px;
+}
+
+table {
+    font-size: 18px;
+    border-collapse: collapse;
+    color: grey;
+    padding: 3px;
+    height:100%;
+    
+}
+
+table a{
+    text-decoration: none;
+}
+
+table input {
+    border-radius: 10px;
+    border: 2px solid grey;
+    padding: 20px; 
+    width: 20px;
+    height: 10px; 
+    
+    color: grey;
+}
+
+table button {
+    border-radius: 5px;
+    border: 2px solid grey;
+    width: 100px;
+    height: 55px; 
+    text-align: center;
+    color: white;
+    background: grey;
+    font-size: 18px;
+}
+
+button:hover {
+    color: lightgrey;
+}
+td {
+    border-bottom: 3px solid gray;
+}
+
+tr:hover {
+    color: white;
+    background: lightgrey;
+}
+
+ th {
+  height:20px;
+  width:100%;
+  top:0px;
+  position: sticky;
+  background: black;
+  color: white;
+  
+  
+  
+}
+
