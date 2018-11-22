@@ -1,0 +1,630 @@
+
+body {
+    background: lightgray;
+    margin-left: 52px;
+    margin-top:15px;
+    width:1160px;
+
+}
+.content{
+    width:1160px;
+    height: auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+header {
+    width: 100%;
+    height:45px;
+    background:white;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    
+}
+.header-wrap {
+    width:85%;
+    margin:0;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-wrap {
+    display: flex;
+    align-items:center;
+    font-family: 'Oswald',sans-serif;
+    font-size: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    height: 45px;
+    width: auto;
+
+}
+
+header .menu {
+   
+    width: auto;
+    height: 100px;
+    
+    
+}
+.menu img {
+    height:25px;
+
+}
+header .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .menu ul li {
+    padding: 0 10px 0 0;
+    font-family: 'Oswld', 'sans-serif';
+    color: #2d2d2d;
+    display: inline;
+    margin:10px;
+}
+
+header  .menu ul .dropdown 
+{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    height: auto;
+    margin-top:10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,.15);
+    border: 1px solid #eaeef1;
+    z-index: 1;
+    top:25px;
+}
+.has-dropdown {
+    position: relative;
+}
+header .menu .has-dropdown:hover .dropdown {
+    display: flex;
+    }
+header .menu ul li.has-dropdown::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: darkgray transparent transparent transparent;
+}
+header .menu ul li a {
+    color: #2d2d2d;
+    text-decoration: none;
+}
+.menu {
+    width: auto;
+}
+
+.search {
+    width: 300px;
+}
+.search-hover {
+    display: flex;
+}
+.menu-wrap {
+    display: flex;
+    align-items:center;
+}
+.men-img {
+    height: 25px;
+}
+
+.logo2 {
+    display:flex;
+    margin: 45px 0 20px;
+    flex-direction:column;
+    width:85%;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    margin-top:10px;
+    
+}
+.logo2 img {
+    
+    position: relative;
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    object-position: bottom;
+}
+.mark {
+    width:100%;
+}
+.mark img {
+    width:20px;
+    height:20px;
+}
+/* Ne najdovme malecok znakce inaku nema potreba od slika direkno before na span elementot vo mark klasata*/
+.part {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    
+}
+
+.slider::after{
+    content:url(arrow-right.png);
+    position:absolute;
+    right:-30px;
+    top:35%;
+}
+
+.slider::before {
+    content:url(arrow-left.png);
+    position:absolute;
+    left:-30px;
+    top:35%;
+}
+.content-wrap {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px 0 140px;
+}
+.logo-wrap {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 1px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,.15);
+    border-radius: 1px;
+    border: 1px solid #eaeef1;
+    
+}
+
+.logo-wrap img {
+    width: 90%;
+    height: auto;
+}
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:auto;
+    width:100%;
+    margin:10px;
+}
+.dot {
+    display: inline-block;
+    height:15px;
+    width:15px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin: 10px;
+    background:white;
+}
+
+.dot:nth-child(9){
+    background:black;
+}
+.mali-kuponi {
+        width:85%;
+        display:flex;
+        flex-direction:column;
+        margin:10px;
+        justify-content: center;
+        align-items: center;
+}
+span.text {
+    text-transform: uppercase;
+    font-size:20px;
+    font-family:'Ubuntu', sans-serif;
+    font-weight:bold;
+}
+span.text1 {
+    font-size:35px;
+    font-family:'Oswald', sans-serif;
+    text-align: center;
+    font-weight:bold;
+}
+.boxes {
+    height:auto;
+    width:85%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.box {
+    width: 100%;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    margin-bottom: 15px;
+}
+
+
+
+.outterbox {
+    width: calc(100%6 - 10px);
+    height:80px;
+    margin:20px;
+    height:auto;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.box img {
+    width:180px;
+    height: 80px;
+    object-position: 10 20px;
+}
+.deals {
+    display:flex;
+    width:85%;
+    flex-direction:column;
+}
+span.text2 {
+    text-align: center;
+    font-size: 30px;
+    font-weight:bold;
+    font-family:'Oswald',sans-serif;
+    margin:30px;
+
+}
+
+.kocka {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.levakocka {
+    padding:10px;
+    border-right:1px solid Black;
+}
+
+.desnakocka {
+    padding:10px;
+    margin-left:5px;
+}
+
+span.text3 {
+    color: white;
+    font-family:ced
+}
+
+    
+
+.coupons{
+    width: 85%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top:35px;
+    margin-right:15px;
+
+}
+.coupons:nth-child(1){
+
+    grid-column: 1/1;
+    grid-row: 1/1;
+
+}
+
+.coupons:nth-child(2){
+
+    grid-column: 2/1;
+    grid-row: 1/1;
+
+}
+
+.coupons:nth-child(3){
+
+    grid-column: 1/1;
+    grid-row: 2/1;
+
+}
+
+.coupons:nth-child(4){
+
+    grid-column: 2/1;
+    grid-row: 2/1;
+
+}
+
+.coupons:nth-child(5){
+
+    grid-column: 2/1;
+    grid-row: 3/1;
+
+}
+
+.coupons:nth-child(6){
+
+    grid-column: 3/1;
+    grid-row: 3/1;
+
+}
+.coupon{
+
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: solid 1px #E8E9E9;
+    border-radius: 3px;
+    
+}
+
+ .coupon-left{
+
+    width: 25%;
+    height: 100%;
+
+}
+.coupon-left img{
+    width: 150px;
+    margin-left: 30px;
+}
+
+/* .coupon-deal{
+
+    display: flex;
+    background-color: #185F7D;
+    color: white;
+    font-weight: normal;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 3px;
+    margin-top: -15px;
+}
+
+.coupon-code{
+
+    display: flex;
+    background-color: #FF5630;
+    font-weight: normal;
+    color: white;
+    font-size: 12px;
+    padding: 3px;
+    border-radius: 3px;
+    margin-top: -15px;
+
+} */
+
+.coupon-right{    
+    
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+  .coupon-right-text{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    margin-left: 30px;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.maltext a{
+    text-decoration: none;
+    font-size: 14px;
+    color: blue;
+    display: flex;
+    margin-top: 10px;
+    align-self: flex-start;
+
+}
+
+                /* DOLNIOT DEL SO GOLEMITE KUPONI */
+.categories{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+                    /* OVA TUKA DA SE DOVRSI */
+.categories span{
+    display: flex;
+    justify-self: flex-end;
+    height: auto;
+    margin:40px;
+    font-size: 30px;
+    color: white;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons button{
+    width: 17%;
+    height: 30px;
+    background-color: white;
+    color: gray;
+    border: none;
+    box-shadow: 0 1px 1px rgba(34, 25, 25, 0.4);
+    margin-bottom: 30px;
+}
+
+.coupon-dolg{
+
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    height: 125px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: solid 1px #E8E9E9;
+    border-radius: 3px;
+
+}
+
+.golemright{
+    
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+  .golemright-text{
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 60%;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.golemright-button{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    width: 33%;
+     
+}
+
+.golemright-button button:hover {
+    background:black;
+    color:white;
+}
+.golemright-button button{
+
+    background-color:white;
+    color:   black;
+    font-size: 28;
+    font-weight: bold;
+    width:  300px;
+    height: 50px;
+    border: 1px solid rgb(26, 25, 25);
+    border-radius: 2px;
+
+}
+
+.maltextdva{
+        font-size: 14px;
+        color: gray;
+        display: flex;
+        margin-top: 30px;
+        align-self: flex-start;
+}
+
+.golem-left{
+
+    width: 20%;
+    height: 100%;
+
+}
+.golem-left img{
+    width: 150px;
+    margin-left: 30px;
+}
+
+footer {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background: #FFFFFF;
+    width:100%;
+    height:150px;
+    margin-top:40px;
+    position:relative;
+}
+
+span.text4 {
+    width:85%;
+    font-family:'Oswald',sans-serif;
+    font-size: 13px;
+}
+
+.info {
+    display:flex;
+    width:85%;
+    align-self: left;
+    margin-top:20px;
+    font-family:'Ubuntu', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    position:relative;
+
+}
+.info span {
+    margin-right: 15px;
+}
+
+.kopce {
+    position:absolute;
+    right:10px;
+    bottom: 0;
+    height: 40px;
+    width: 40px;
+    border: 6px solid darkgray;
+    border-radius: 5%;
+    background: #FFFFFF;
+    overflow: visible;
+}
+.kopce img {
+    max-width:100%;
+    
+}
+
+.subfooter{
+    display:flex;
+    position:relative;
+}
+
+@media
