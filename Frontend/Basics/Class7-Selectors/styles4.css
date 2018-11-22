@@ -1,0 +1,89 @@
+body {
+    font-family: 'Oswald', sans-serif;
+    
+}
+
+nav {
+    display: flex;
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+ul li a {
+    color: rgb(79, 79, 79);
+    text-decoration: none;
+    font-size: 35px;
+}
+
+ul li.dove::before {
+    content: url('dove.svg');
+    width: 26px;
+    margin-right:10px;
+}
+
+ul li.fish::after {
+    content:url('fish.svg');
+    width: 26px;
+    margin-left:10px;
+}
+
+ul li.paw::before {
+    content:url('paw.svg');
+    width: 26px;
+    margin-right: 10px;
+}
+
+ul li.sun::after {
+    content: url('sun.svg');
+    width: 26px;
+    margin-left: 10px;
+}
+
+ul li.dog::before {
+    content: url('dog.svg');
+    border-bottom: 0;
+    width:16px;
+    margin-right:10px;
+}
+
+ul li:nth-child(5){
+    border:none;
+}
+.voucher {
+    width: 300px;
+   height: 80px;
+   border: 1px solid #d4d4d4;
+   display:flex;
+   flex-direction: column;
+   position:relative;
+}
+
+.content {
+    width: 90%;
+    display:flex;
+    right:0;
+}
+
+.content::after {
+    position: absolute;
+    right:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url('arrow.png');
+    width: 80px;
+    height: 80px;
+    border:1px solid lightblue;
+    border-radius: 50%;
+    
+}

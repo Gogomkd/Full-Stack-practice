@@ -1,0 +1,79 @@
+.body-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1100px;
+    height: auto;
+    overflow: hidden;
+}
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list div {
+    display: flex;
+    width: calc(25% - 10px);
+    height: 100px;
+    max-height: 100px;
+    margin-bottom: 15px;
+    border: 1px dashed rgb(226, 226, 226);
+}
+
+.list div:nth-child(odd) {
+    background-color: rgb(45,45,45);
+}
+
+.list div:nth-child(even) {
+    background-color: rgb(218, 135, 197);
+}
+
+.list div:first-child {
+    background-color: black;
+}
+
+.list div:last-child {
+    background-color: yellow;
+}
+
+.list div:nth-child(3n + 4){
+    background-color: blue;
+}
+
+/* @media screen and (max-width:500px) {
+    .list div {
+        width: 100%;
+    }
+} */
+
+@media only screen and (min-width: 900px) and (max-width: 1100px) {
+    .body-wrap {
+        width:80%;
+    }
+    .last div {
+        width: calc(45% - 10px);
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .body-wrap {
+        width:90%;
+    }
+    .list div {
+        width:100%;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    .body-wrap{
+        width:85%;
+    }
+    .list div {
+        width: calc(45% - 15px);
+    }
+}
