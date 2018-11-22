@@ -1,0 +1,55 @@
+body {
+    font-family: 'Dancing Script', cursive;
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    text-align: center;
+    line-height: 2;
+    background: #093f75;
+    color: #fff;
+}
+
+.two li {
+    color: unset;
+}
+
+div {
+    flex: 1;
+    max-width: 32%;
+}
+
+.two ol:nth-of-type(2) {
+    color: red;
+}
+
+.two ol:first-of-type {
+    color: rgb(193, 138, 138);
+}
+
+.two ol:last-of-type {
+    color: rgb(80, 10, 10);
+}
+
+.three ul:nth-of-type(odd) li {
+    color: red;
+}
+
+@media only screen and (max-width:900px) {
+    body {
+        display:flex;
+        flex-direction: column-reverse;
+        box-sizing: border-box;
+    }
+    div {
+        max-width:100%;
+    }
+}
