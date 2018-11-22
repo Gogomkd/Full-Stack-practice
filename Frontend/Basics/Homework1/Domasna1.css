@@ -1,0 +1,128 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height:500px;
+    width: 800px;
+    padding: 50px;
+    background: lightgray;
+    position: absolute;
+    
+}
+
+h2{
+    font-size: 70%;
+    margin: none;
+
+}
+
+
+.sidelist{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    padding: 3px;
+    margin-bottom: 2px;
+    }
+
+   
+    a {
+        color: darkblue;
+    }
+
+    .kocka{
+        display: flex;
+        flex-direction:column;
+        width:60%;
+        height:100%;
+        background: #7179AC;
+        color:white;
+        padding: 3px;
+        margin-bottom:2px;
+        
+    }
+    .upper{
+        
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 10px;
+        padding: 5px;
+        
+    }
+
+    h3{
+        font-size: 15px;
+    }    
+.kocka a{
+    color:white;
+    
+}
+.kocka p{
+    display: flex;
+    justify-content: flex-end;
+}
+.sidelist input {
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    padding:5px;
+    text-align: center;
+}
+.kocka input {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    margin: none;
+    padding: 5px;
+    
+    text-align: center;
+    
+}
+#kopce {
+    display:flex;
+    justify-content: flex-end;
+    margin-top:10px;
+}
+#kopce2{
+    display:flex;
+    justify-content: flex-start;
+    float: left;
+    width:125px;
+    height: 30px;
+    margin-top: 10px;
+    
+    
+}
+
+#kopce3{
+    display:flex;
+    justify-content: flex-end;
+    margin-top:10px;
+}
+
+.kocka button{
+    border: 1px solid gold;
+    width:80px;
+    height:50px;
+    color:white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display:flex;
+    justify-content: center;
+
+}
+.sidelist button{
+    display:flex;
+    justify-content: center;
+    width:80px;
+    height:45px;
+    color:darkblue;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 1px solid darkblue;
+}
+
+.sidelist p{
+    color: darkgray;
+}
