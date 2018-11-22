@@ -1,0 +1,85 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid
+{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+grid-template-rows: repeat(auto, 50px);
+grid-gap:20px;
+width: 60%;
+
+grid-template-areas: 
+ "hd"
+ "as"
+ "p" 
+ "ar"
+ "ft";
+
+}
+header, article, p, footer, aside {
+    background-color: #808888;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 12px;
+    
+ 
+}
+header {
+   
+    grid-area: hd;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+}
+
+article {
+    
+    grid-area: ar;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+p {
+    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:40px;
+}
+
+aside {
+    
+    grid-area: as;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+footer {
+   
+    grid-area: ft;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+
+@media(min-width: 640px) {
+    .grid
+    {
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-areas: 
+        "hd hd hd"
+        "as p ar"
+        "ft ft ft"
+
+    }
+}
