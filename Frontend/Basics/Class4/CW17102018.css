@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1100px;
+    overflow: hidden;
+    height: auto;
+}
+.lista {    
+    height: auto;
+}
+
+ul.adidas {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+li.post {
+    width: calc(25% - 10px);
+    display: flex;
+    background-color: #f6f6f6;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,.15);
+    border-radius: 3px;
+    border: 1px solid #eaeef1;
+    height: 80px;
+    align-items: center;
+    margin: 3px;
+    
+}
+.postimg  img {
+    height: 50px;
+    width: 100%;
+    object-fit: contain;
+    border-right: 1px solid #e8e9e9;
+    
+}
+.text {
+    display:flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5px;
+
+}
+.text .link {
+    font-weight: bold;
+    color: #1097cc;
+    font-size: 20px;
+}
+
+.text .tag {
+    display: flex;
+    flex-direction: column;
+}
+
+.tag span {
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+}
+
+span.tag2 {
+    display:block;
+    font-size: 14px;
+}
