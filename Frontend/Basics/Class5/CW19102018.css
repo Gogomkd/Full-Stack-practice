@@ -1,0 +1,264 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    
+    
+    overflow: hidden;
+    height: auto;
+    background-color: #f8f9f9
+}
+body {
+    margin: 0;
+}
+.content {
+    display:flex;
+    flex-direction: row;
+   
+    width: 90%;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0;
+}
+.levo {
+    display: flex;
+    width: calc(80% - 70px);
+    height:auto;
+    flex-direction:column;
+    margin:15px;
+    padding: 25px 20px 25px 30px;
+    cursor: pointer;
+    
+}
+.post1 {
+    display: flex;
+    flex-direction: row;
+    height:120px;
+    width:100%;
+    border:1px solid lightgray;
+    margin-bottom: 10px;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,.15);
+    border-radius: 1px;
+}
+.span1-levo {
+    display: flex;
+    flex-direction:column;
+}
+.post1 .post1-levo {
+    width: 20%;
+    height:auto;
+    border-right: 1px solid lightgray;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    font-family:'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    padding:15px 10px;
+    
+}
+.code {
+    height:25px;
+    width:35px;
+    background: red;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 3px;
+    margin-top:5px;
+}
+
+.post1 .post1-desno {
+    width: 80%;
+    height:auto;
+    display: flex;
+  
+    align-items: center;
+    flex-direction:row;
+    justify-content: space-between;
+
+}
+
+.span2-desno {
+    display: flex;
+    flex-direction:column;
+    padding: 5px;
+    margin-right:2px;
+    margin-top:20px;
+}
+
+.span2-desno .sup {
+    vertical-align: super;
+    font-size: smaller;
+    margin-top: 20px;
+
+}
+
+.post1-desno button {
+    width:25%;
+    height:60px;
+    margin: 10px;
+    padding: 5px;
+    background:#299ecc;
+    color:white;
+    font-weight: bold;
+    border-radius:10px;
+    font-size: 15px;
+}
+
+.code2 {
+    height:25px;
+    width:40px;
+    background: blue;
+    color:white;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 3px;
+    margin-top:5px; 
+}
+
+.desno {
+    display: flex;
+    width: calc(25% - 30px);
+    height:100%;
+    flex-direction:column;
+    margin: 15px;
+    padding:5px;
+    
+}
+
+
+ .gore {
+    width:250px;
+    height:5%;
+    text-align:left;
+    justify-content: center;
+    
+    display:flex;
+    flex-direction:column;
+    font-family:'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    padding:15px 10px;
+    border:1px solid lightgray;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,.15);
+    border-radius: 1px;
+    margin-bottom: 10px;
+    margin-top: 39px;
+}
+
+ .dole {
+    width:240px;
+    height:70%;
+    text-align:left;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    flex-direction:column;
+    font-family:'Ubuntu', sans-serif;
+    text-transform: capitalize;
+    border:1px solid lightgray;
+    background-color: white;
+    box-shadow: 0 1px 1px 0 rgb(0,0,0,.15);
+    border-radius: 1px;
+    padding:20px 15px;
+    
+    
+}
+.spangore1 {
+    font-weight: bold;
+   
+    font-size: 18px;
+    
+}
+.spangore2 {
+    font-size: 13px;
+    color: gray;
+
+}
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 25px;
+    color: gold;
+    
+  }
+  .rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+    
+  }
+  .rating > span:hover:before,
+  .rating > span:hover ~ span:before {
+     content: "\2605";
+     position: absolute;
+     
+  }
+
+.h2 {
+    width:100%;
+    font-weight: bold;
+    font-family:'Oswald',sans-serif;
+    font-size: 13px;
+    text-align: left;
+    border:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    text-align: top;
+
+}
+.h3 {
+    width:100%;
+    font-weight: bold;
+    font-family:'Oswald',sans-serif;
+    font-size: 13px;
+    text-align: left;
+    border:none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+   }
+
+.spandole1 {
+    width: 100%;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+}
+
+ul.lista1 {
+    width:100%;
+    text-align: left;
+    font-size: 12px;
+}
+
+ul.lista2 {
+    width:100%;
+    font-size: 12px;
+    text-align: left;
+}
+
+.fixedbutton {
+    display:flex;
+    position:fixed;
+    right:0;
+    bottom: 0;
+    height: 50px;
+    width: 50px;
+    margin-right:20px;
+    border-radius:50%;
+    border: 1px solid silver;
+    justify-content: center;
+    align-items: center;
+}
+.fixedbutton img {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.starchecked {
+    color:orange;
+}
