@@ -1,0 +1,48 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 50px);
+    grid-column-gap: 10px;
+    grid-row-gap: 20px;
+  
+}
+
+.eden{
+    border: 1px solid blue;;
+    background-color: #454545;
+    border-radius: 3px;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .dva {
+        border: 1px solid blue;;
+        background-color: #454545;
+        border-radius: 3px; 
+        color: white;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+div:nth-child(1){
+order:2;
+}
+div:nth-child(2){
+ order: 5;  
+}
+div:nth-child(3){
+    order:6;
+}
+div:nth-child(4){
+   order: 1; 
+}
+div:nth-child(5){
+    order: 4;
+}
+div:nth-child(6){
+    order: 3;
+}
+
