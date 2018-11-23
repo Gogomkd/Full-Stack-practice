@@ -8,24 +8,26 @@ function compare(Broj1, Broj2) {
     //  Broj2 = 0;
     var value1 = Broj1 % 10;
     var value2 = Broj2 % 10;
-    if (value1 == value2){
-        return false;
-    } else {
-        Broj1 = value1 % 10;
-        value1 = Math.floor(Broj1 / 10);
-        Broj2 = value2;
-        value2 = Math.floor(Broj2 / 10);
+    while(value1 != value2){
+            Broj1 = value1 % 10;
+            value1 = Math.floor(Broj1 / 10);
+            Broj2 = value2;
+            value2 = Math.floor(Broj2 / 10);
+            if(value1 == value2){
+                return false;
+            }
     }
+
    return true;
 }
 
 function differentNext(N, X){
     var result = N + 1;
     while(compare(result, X)){
-        result++;
+        result;
     }
     alert("Najgolemiot pogolem broj od " + N + " koj e razlicen od " + X + " e " + result)
     return result;
 }
 
-differentNext(101, 211);
+differentNext(101, 345);
