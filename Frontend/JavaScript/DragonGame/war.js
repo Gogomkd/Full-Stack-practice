@@ -51,9 +51,9 @@ function War() {
                 victim.attack(this.boss, getRandom((victim.minDamage + 250), (victim.maxDamage + 350)));
 
             } if (victim.shouting){
-                console.log("The Berserker is gaining Berserc Call and retaliates with huge amount of dmg at cost of his life ");
+                console.log("The Berserker is gaining Berserc Call and retaliate with huge amount of dmg at cost of his life ");
                 this.boss.attack(victim, getRandom(this.boss.minDamage, this.boss.maxDamage));
-                victim.attack(this.boss, getRandom((victim.minDamage + 350), (victim.maxDamage + 450)));
+                victim.attack(this.boss, getRandom((victim.minDamage + 550), (victim.maxDamage + 650)));
                 victim.health = 500;
                 console.log(victim.health, " is now the health of ", victim.name);
             }
