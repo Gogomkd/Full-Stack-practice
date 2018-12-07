@@ -102,8 +102,10 @@ function War() {
                     break;
                 case 4:
                     this.army.push(new Priest("Priest " + index));
+                    break;
                 case 5:
                     this.army.push(new Berserker("Berserker " + index));
+                    break;
                 default:
                     break;
             }
