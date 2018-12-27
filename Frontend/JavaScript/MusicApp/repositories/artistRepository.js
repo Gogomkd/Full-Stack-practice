@@ -1,4 +1,6 @@
-function ArtistRepository() {
+import {Artist} from "/entities/artist.js";
+
+export function ArtistRepository() {
     this.getArtist = async function (artistName) {
         var result = null;
         try {

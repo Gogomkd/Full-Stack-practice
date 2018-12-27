@@ -1,4 +1,6 @@
-function ArtistLogic() {
+import {ArtistRepository} from "/repositories/artistRepository.js";
+
+export function ArtistLogic() {
     this.artistRepo = new ArtistRepository();
     // this.albumRepo = new AlbumRepository();
     
