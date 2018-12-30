@@ -28,12 +28,19 @@ export function RenderArtist() {
     this.renderSimilar = function() {//se kreira for ciklus za slicni artisti kolku sto se ponudeni vo apito site se printaat na ekran i site se pokazani so slika i so ime
 
 
-        var $similarArtist = $("<div>").addClass("similar");
+        var $similarArtist = $("<div>").addClass("similar")
         $similarArtist.prepend($("<span>").addClass("similarMainSpan").html("Similar Artists"));
         
         for (let index = 0; index < this.artistData.artist.similar.artist.length; index++) {
             
-            $similarArtist.append($("<div>").addClass("similarArtist").append($("<img>").addClass("similarImg").attr("src", this.artistData.artist.similar.artist[index].image[1]["#text"])).append($("<a>").addClass("similarSpan").attr("href", this.artistPageData.getArtistPageData(this.artistData)).html(this.artistData.artist.similar.artist[index].name)));
+            $similarArtist.append($("<div>").addClass("similarArtist").append($("<img>").addClass("similarImg").attr("src", this.artistData.artist.similar.artist[index].image[1]["#text"])).append($("<a>").addClass("similarSpan").attr("href", this.artistData.artist.similar.artist[index].name).html(this.artistData.artist.similar.artist[index].name)).on("click", (event) => {
+                event.preventDefault();
+                $("#main-container").html("");
+                console.log(event.target);
+    
+                this.renderAll(event.target.text)
+    
+            }));
             
         }
         return $similarArtist;
@@ -43,7 +50,17 @@ export function RenderArtist() {
 
       return  $("<div>").addClass("artist-bio").append($("<span>").html(moment(this.artistData.artist.bio.published).format("DD - MMMM - YYYY"))).append($("<span>").html(this.artistData.artist.stats.listeners).append($(("<p>")).text(" -- Listeners "))).append($("<span>").html(this.artistData.artist.stats.playcount).append($(("<p>")).text(" -- Playcounts "))).append($("<div>").addClass("LastSpan").html(this.artistData.artist.bio.summary));
     }
-    this.renderArtistAlbum = function() {// TO DO REPO FOR ALBUM
-        $("<div>").addClass("artist-album").html(this.artistData.artist.album).appendTo(".artist-container");
+
+
+    this.renderArtistAlbum = function() {// Done pecati albumi kade album apito zema 2 parametara artistname i topalbum names 
+        var $albums = $("<div>").addClass("artist-album").appendTo(".artist-container")
+        $("<span>").addClass("albumSpan").html("Top Albums").appendTo($albums);
+        for (let index2 = 0; index2 < this.artistData.album.length; index2++) {
+
+
+            $albums.append($("<div>").addClass("albums").append($("<img>").addClass("albumImg").attr("src", this.artistData.album[index2].image[1]["#text"])).append($("<span>").addClass("").html(this.artistData.album[index2].name)));
+            
+        }
+       return  $albums;
     }
 }
