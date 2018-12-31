@@ -16,7 +16,8 @@ export function RenderArtist() {
         .append(this.renderArtistProfile())
         .append(this.renderSimilar())
         .append(this.renderBio())
-        .append(this.renderArtistAlbum());
+        .append(this.renderArtistAlbum())
+        .append(this.renderArtistTopTracks());
         
 
     }
@@ -62,5 +63,14 @@ export function RenderArtist() {
             
         }
        return  $albums;
+    }
+
+    this.renderArtistTopTracks = function() {
+        var $tracks = $("<div>").addClass("topTracks").appendTo(".artist-container")
+        $("<span>").addClass("topTracksSpan1").html("Top Tracks").appendTo($tracks);
+        for (let index3 = 0; index3 < this.artistData.topTracks.length; index3++) {
+            $tracks.append($("<div>").addClass("tracks").append($("<span>").addClass("topTracksSpan2").html(this.artistData.topTracks[index3].name)).append($("<img>").addClass("trackImg").attr(("src"),this.artistData.topTracks[index3].album.image[0]["#text"])));
+        }
+        return $tracks;
     }
 }

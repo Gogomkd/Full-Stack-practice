@@ -141,3 +141,37 @@ body {
     font-weight: bolder;
     text-align: center;
 }
+
+.topTracks {
+    color:black;
+    text-align: justify;
+    grid-column:2;
+    grid-row: 3/4;
+}
+.tracks {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:17px;
+    font-weight: bolder;
+    font-size: 10px;
+}
+
+
+.topTracksSpan1 {
+    color: black;
+    font-size: 27px;
+    font-weight: bolder;
+    text-align: center;
+}
+.topTracksSpan2 {
+    color: black;
+    font-size: 22px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.trackImg {
+    width:70px;
+    height:80px;
+}
