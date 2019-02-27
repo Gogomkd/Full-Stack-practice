@@ -63,6 +63,7 @@ function PageRenderer(data) {
             var pictures = document.createElement("img");
             pictures.id = index;
             pictures.src = this.userData.album[index].link;
+            console.log(this.userData.album[index].link);
             pictures.out = this.userData.album[index].text;
             pictures.style.width = "90%";
             var that = this;

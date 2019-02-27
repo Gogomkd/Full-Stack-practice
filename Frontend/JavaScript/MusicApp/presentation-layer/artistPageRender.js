@@ -7,18 +7,18 @@ export function RenderArtist() {
     this.artistData = {};
     this.renderAll = async function(artistName) {
         this.artistData = await this.artistPageData.getArtistPageData(artistName);
-        
+        // this.artistSearch = await this.artistPageData.getArtistSearch(artistName)
         // $("<div>").attr("id","main-container").addClass("main-container").append(data).appendTo("body").insertBefore("<script>");
         
         $("<div>").addClass("artist-container").appendTo("#main-container");
         var $artistContainer = $(".artist-container");
         $artistContainer
+        .append(this.renderSearchButton())
         .append(this.renderArtistProfile())
         .append(this.renderSimilar())
         .append(this.renderBio())
         .append(this.renderArtistAlbum())
         .append(this.renderArtistTopTracks());
-        
 
     }
     this.renderArtistProfile = function(){// kreiran div so klasa kade mu se dodava ime i se zakacuva slika od artistot 
@@ -73,4 +73,56 @@ export function RenderArtist() {
         }
         return $tracks;
     }
+    
+    this.renderSearchButton = function(){
+        var $search = $("<div>").addClass("searchDiv").appendTo(".artist-container")
+        
+           $("<div>").addClass("top").appendTo(".searchDiv")
+           $("<div>").addClass("bottom").appendTo(".searchDiv")
+           $("<input>").attr("type", "text").addClass("searchInput").appendTo(".top").on("keypress", async (event) => { 
+                var result = await this.artistPageData.getArtistSearch(String.fromCharCode(event.which))
+                    for (let index4 = 0; index4 < result.results.artistmatches.artist.length; index4++) {
+               var searchartist = $("<div>").addClass("divForSearch").append($("<img>").addClass("searchImg").attr(("src"),result.results.artistmatches.artist[index4].image[1]["#text"])).append($("<h5>").text(result.results.artistmatches.artist[index4]
+                .name)).appendTo(".bottom")
+              ///sea treba da se dodava so for
+                }
+                console.log(result);
+                console.log(searchartist);
+                
+            });
+        
+        // $("<button>").html("Search").addClass("searchButton").appendTo(".searchDiv")
+        
+        return $search;
+
+    }
+ 
+    // $("<input>").attr("type", "text").keypress(async (event) => {
+            
+    //     if(this.delayedInput != null){
+    //         clearTimeout(this.delayedInput);
+    //     }
+
+    //     this.delayedInput = setTimeout(async () => {
+    //         this.findArtist = await this.artistPageData.getSearchedArtist(String.fromCharCode(event.which));
+    //         console.log("Render", this.findArtist.searchArtist[1]);
+
+    //         var $searchResult = $("<div>").appendTo($main).addClass("search-result");
+
+    //         for(var index4 = 0; index4 < this.findArtist.searchArtist.length; index4++){
+
+    //             $("<div>").appendTo($searchResult).addClass("search-result1")
+    //             .append($("<img>").attr("src", this.findArtist.searchArtist[index4].image[1]["#text"]))
+    //             .append($("<h5>").text(this.findArtist.searchArtist[index4].name));
+    //         }
+    //     }, 500);
+
+        
+
+        
+
+        
+        
+    // }).addClass("input-search")
+    // .append($("<input>").attr("type", "submit").addClass("input-submit"))
 }

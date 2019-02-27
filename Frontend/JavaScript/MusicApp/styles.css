@@ -175,3 +175,44 @@ body {
     width:70px;
     height:80px;
 }
+.searchDiv {
+    
+    width:200px;
+    height:350px;
+    display:flex;
+    flex-direction:column;
+    
+}
+.searchButton {
+    width:20%;
+    height:100%;
+}
+
+.searchInput{
+    width: 80%;
+    height:10%;
+}
+
+.searchImg {
+    width:30px;
+    height:40px;
+}
+
+.divForSearch {
+    /* margin-top:60px; */
+    display:flex;
+    flex-direction:column;
+}
+
+.top {
+    display:flex;
+    width:100%;
+    height:50%;
+
+}
+.bottom {
+    display:flex;
+    
+    align-items: center;
+    justify-content: center;
+}

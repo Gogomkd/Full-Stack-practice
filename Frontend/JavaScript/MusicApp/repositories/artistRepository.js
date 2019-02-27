@@ -39,5 +39,21 @@ export function ArtistRepository() {
             return result;
         }
     }
+    this.searchArtist = async function (keyword) {
+        var result = null;
+        try {
+            var response = await fetch("http://ws.audioscrobbler.com/2.0/?method=artist.search&artist="+keyword+"&api_key=9a32f4fc4d9d7d4157ef376b08a7fa80&format=json&limit=5");
+            result = await response.json();
+            
+            var names = result.results.artistmatches.map(function(artist){
+                console.log(names);
+                return result.results.artistmatches;
+            })
+            return names;
+        }   catch (error) {
+            return result;
+        }
+    }
+    
 }
 
