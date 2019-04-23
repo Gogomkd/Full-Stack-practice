@@ -2,9 +2,13 @@
   "name": "myapp",
   "version": "0.0.0",
   "private": true,
+  "main": "./bin/www",
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "dev": "nodemon ./bin/www ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
   },
+  "author": "Goran Ilievski",
   "dependencies": {
     "bcrypt": "^3.0.5",
     "connect-flash": "^0.1.1",
@@ -23,6 +27,25 @@
     "validator": "^10.11.0"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-flow-comments": "^6.22.0",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-plugin-typecheck": "^3.9.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-flow": "^6.23.0",
+    "babel-register": "^6.26.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-flowtype": "^3.2.1",
+    "eslint-plugin-flowtype-errors": "^3.6.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "flow-bin": "^0.94.0",
     "nodemon": "^1.18.10"
   }
 }
